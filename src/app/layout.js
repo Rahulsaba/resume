@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={'flex min-h-screen flex-col  p-10'}>
+      <body className={'flex min-h-screen flex-col  pt-10 pr-32 pl-32'}>
       <AntdRegistry>
         {children}
       </AntdRegistry>

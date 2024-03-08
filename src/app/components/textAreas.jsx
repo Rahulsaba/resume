@@ -1,15 +1,13 @@
-import { Input } from 'antd';
+import TextArea from "antd/es/input/TextArea";
 
-
-export default function Inputs({ defaultValue, prefix, className }) {
-
+export default function TextAreas({ className, defaultValue }) {
     return (
-        <Input
+        <TextArea
             className={className}
             placeholder=""
             variant="borderless"
             defaultValue={defaultValue}
-            prefix={prefix}
+            autoSize
         />
     )
 }
