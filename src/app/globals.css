@@ -16,8 +16,19 @@ body {
 
 
 
-.input_class_1{
+.input_class_1 {
   padding: 0 !important;
   min-height: 37px;
 
+}
+
+
+.ant-upload {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+
+.p-0{
+  padding: 0 !important;
 }

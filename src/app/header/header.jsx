@@ -1,27 +1,21 @@
+import { Divider } from "antd";
+import { UserOutlined } from '@ant-design/icons';
 import Inputs from "@/components/input";
 import Uploads from "@/components/uploads";
-import { Col, Divider, Row } from "antd";
-import { UserOutlined } from '@ant-design/icons';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TextAreas from "@/components/textAreas";
 
-
-
 export default function Header() {
-
-
-
-
-
     return (
-        <div >
+        <>
             <Divider orientation="left">Horizontal</Divider>
+
             <div className="flex items-center">
                 <div > <Uploads /></div>
                 <div className="px-10 ">
-                    <h2 className=" font-bold ">
-                        Rahul R
-                    </h2>
+                    <Inputs
+                        className={"font-bold  input_class_1"}
+                        defaultValue=" Rahul R"
+                    />
                     <Inputs
                         className={"input_class_1"}
                         prefix={<UserOutlined />}
@@ -60,12 +54,22 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="pt-10 pl-36">
+            <div className="pt-10 ">
                 <TextAreas
-                className={''}
-                    defaultValue={"Have Been Involved in Web Development for the past 1+ years . Primary focus being on development multi-tier web applications involving complex R&D activities. Also have experience building standards complaint customer-facing role and managing projects."}
+                    className={'p-0'}
+                    defaultValue={"Have Been Involved in Web Development for the past 1+ years ."}
+                />
+                <TextAreas
+                    className={'p-0'}
+                    defaultValue={"Primary focus being on development multi-tier web applications involving complex R&D activities. "}
+                />
+                <TextAreas
+                    className={'p-0'}
+                    defaultValue={"Also have experience building standards complaint customer-facing role and managing projects."}
                 />
             </div>
-        </div>
-    );
+
+           
+        </>
+    )
 }
