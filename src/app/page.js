@@ -1,5 +1,5 @@
 "use client"
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import Header from "@/header/header";
@@ -9,6 +9,7 @@ import Header from "@/header/header";
 export default function Home() {
 
     const pdfref = useRef();
+    const [loading, setLoading] = useState(false);
 
     const downloadPdf = () => {
         const input = pdfref.current;
@@ -40,7 +41,10 @@ export default function Home() {
 
 
             <div className="mt-5">
-                <button onClick={downloadPdf}>
+                <button className={'button_1'}
+                    onClick={downloadPdf}
+                    
+                >
                     download h
                 </button>
             </div>

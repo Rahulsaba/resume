@@ -29,6 +29,14 @@ body {
 }
 
 
-.p-0{
+.p-0 {
   padding: 0 !important;
+}
+
+.display-none {
+  color: #fff;
+}
+
+.button_1:hover {
+  color: #fff;
 }
