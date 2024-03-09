@@ -14,15 +14,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-        <meta name="description" content="Checkout our cool page" key="desc" />
-        <meta property="og:title" content="Social Title for Cool Page" />
+        <meta name="description" content="Rahul Online Resume Generator " key="desc" />
+        <meta property="og:title" content="Rahul Online Resume Generator " />
         <meta
           property="og:description"
-          content="And a social description for our cool page"
+          content="Rahul Online Resume Generator "
         />
         <meta
           property="og:image"
-          content="https://rahulsabaresume.netlify.app/public/vercel.svg"
+          content="https://rahulsabaresume.netlify.app/public/next.svg"
         />
       </Head>
       <body className={'flex min-h-screen flex-col  pt-10 pr-36 pl-36'}>
