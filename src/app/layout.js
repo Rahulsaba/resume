@@ -6,7 +6,7 @@ import Head from 'next/head';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Rahul Resume",
+  title: "Rahul hello",
   description: "Online Resume Generator ",
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
             />
             <meta
               property="og:image"
-              content="https://example.com/images/cool-page.jpg"
+              content="https://rahulsabaresume.netlify.app/public/vercel.svg"
             />
           </Head>
           {children}
